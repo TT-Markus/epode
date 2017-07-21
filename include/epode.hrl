@@ -31,8 +31,8 @@
 -type epode_bdict_type()     :: dict | orddict | vbisect.
 -type epode_all_dict_type()  :: dict | orddict | vbisect.
 
--type epode_bare_edict()     :: dict() | orddict:orddict().                      % erlang dict
--type epode_bare_bdict()     :: dict() | orddict:orddict() | vbisect:bindict().  % binary dict
+-type epode_bare_edict()     :: dict:dict() | orddict:orddict().                      % erlang dict
+-type epode_bare_bdict()     :: dict:dict() | orddict:orddict() | vbisect:bindict().  % binary dict
 
 -type epode_bdict()          :: {epode_bdict_type(), epode_keyval_binary_type(),     epode_bare_bdict()}.
 -type epode_edict()          :: {epode_edict_type(), epode_keyval_non_binary_type(), epode_bare_edict()}.
